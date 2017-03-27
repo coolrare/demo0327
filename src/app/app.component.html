@@ -12,9 +12,8 @@
 
             <!-- Article START-->
             <app-article
-              *ngFor="let item of data"
-              [item]="item"
-              (delete)="deleteArticle($event)"></app-article>
+              *ngFor="let item of datasvc.data"
+              [item]="item"></app-article>
             <!-- Article END-->
 
           </div>
