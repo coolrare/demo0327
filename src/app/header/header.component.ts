@@ -13,8 +13,13 @@ export class HeaderComponent implements OnInit {
     return this.title;
   }
 
-  changeTitle() {
-    this.title = this.title + '!';
+  changeTitle($event: MouseEvent) {
+    console.log($event);
+    if($event.ctrlKey) {
+      this.title = this.title.substr(0, this.title.length - 1);
+    } else {
+      this.title += '!';
+    }
   }
 
   constructor() { }
