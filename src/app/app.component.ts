@@ -15,6 +15,10 @@ export class AppComponent {
     this.temp = $event;
   }
 
+  deleteArticle($event) {
+    this.data.splice(this.data.indexOf($event), 1);
+  }
+
   data = [
     {
       "href": "http://blog.miniasp.com/post/2016/04/30/Visual-Studio-Code-from-Command-Prompt-notes.aspx",

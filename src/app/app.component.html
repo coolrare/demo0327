@@ -11,7 +11,10 @@
           <div id="ctl00_cphBody_PostList1_posts" class="posts">
 
             <!-- Article START-->
-            <app-article [item]="item" *ngFor="let item of data"></app-article>
+            <app-article
+              *ngFor="let item of data"
+              [item]="item"
+              (delete)="deleteArticle($event)"></app-article>
             <!-- Article END-->
 
           </div>
