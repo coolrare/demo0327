@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  @Input()
   title = 'The Will Will Web';
+
+  @Output()
+  logoclick = new EventEmitter();
 
   getTitle() {
     return this.title;
@@ -20,6 +24,8 @@ export class HeaderComponent implements OnInit {
     } else {
       this.title += '!';
     }
+
+    this.logoclick.emit(this.title);
   }
 
   checkSubtitleMark() {

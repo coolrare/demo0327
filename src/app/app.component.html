@@ -1,5 +1,7 @@
 
-    <app-header></app-header>
+    <app-header [title]="keyword" (logoclick)="doLogoClick($event)"></app-header>
+
+{{temp}}
 
     <!-- CONTAINER START-->
     <section class="container">

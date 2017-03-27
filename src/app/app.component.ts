@@ -10,6 +10,11 @@ export class AppComponent {
 
   keyword = '';
 
+  temp = '';
+  doLogoClick($event) {
+    this.temp = $event;
+  }
+
   data = [
     {
       "href": "http://blog.miniasp.com/post/2016/04/30/Visual-Studio-Code-from-Command-Prompt-notes.aspx",
