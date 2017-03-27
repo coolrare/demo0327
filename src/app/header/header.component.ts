@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  title = 'The Will Will Web (保哥的部落格)';
+
+  getTitle() {
+    return this.title;
+  }
+
   constructor() { }
 
   ngOnInit() {
