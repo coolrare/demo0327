@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
 
-  keyword = '';
+  keyword = 'New Title';
 
   temp = '';
   doLogoClick($event) {
