@@ -23,9 +23,7 @@ export class HeaderComponent implements OnInit {
   }
 
   checkSubtitleMark() {
-    return {
-      mark: this.title.length % 2 == 0
-    };
+    return this.title.length % 2 == 0;
   }
   constructor() { }
 
